@@ -244,11 +244,3 @@ class Matrix():
 			matrixString += (rowString + os.linesep)
 		return matrixString
 
-def __main__():
-	##testing
-	randomMatrix = Matrix.generateMatrixRand(9, 1)
-	print(randomMatrix)
-	print(randomMatrix.maxElIndex())
-
-if __name__ == '__main__':
-	__main__()
