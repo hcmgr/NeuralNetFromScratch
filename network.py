@@ -113,14 +113,3 @@ class Network():
 	def test(self, testImages, testLabels):
 		results = [(Matrix.maxElIndex(self.feedForward(x)), y) for x, y in zip(testImages, testLabels)]
 		return sum(int(x == y) for x, y in results)
-
-
-
-""" def __main__():
-	vector1 = Matrix([[-9, -4, 5, 50, -5, 420]])
-	siggedV1 = vector1.apply(sigmoid)
-	print(siggedV1)
-
-
-if __name__ == '__main__':
-	__main__() """

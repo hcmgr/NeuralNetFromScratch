@@ -67,18 +67,3 @@ def printPretty(image):
 
 	for _ in strs:
 		print(_)
-
-
-
-####(DEPRECATED) OLD 28x28 input matrix#####
-""" def matrifyImageVector(image):
-	currentImg = []
-	currentRow = []
-	for i in range(DIGIT_IMG_SIZE):
-		if (i % 28 == 0 and i != 0) or (i == DIGIT_IMG_SIZE - 1):
-			if (i == DIGIT_IMG_SIZE - 1):
-				currentRow.append(image[i])
-			currentImg.append(currentRow)
-			currentRow = []
-		currentRow.append(image[i])
-	return Matrix(currentImg) """
